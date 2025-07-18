@@ -2,6 +2,10 @@
 
 A full-stack social media application featuring user profiles, authentication, and a public feed.
 
+## 🌐 Live Demo
+
+🔗 **[View Live App](https://sadaora-inky.vercel.app/)**
+
 ## 🚀 Tech Stack
 
 - **Frontend**: React.js with Vite
@@ -9,7 +13,7 @@ A full-stack social media application featuring user profiles, authentication, a
 - **Database**: PostgreSQL with Prisma ORM
 - **Authentication**: JWT-based session management
 - **File Upload**: AWS S3 (for profile images)
-- **Deployment**: Ready for Vercel frontend + backend
+- **Deployment**: Ready for Vercel/Netlify frontend + Railway/Heroku backend
 
 ## 🏗️ Project Structure
 
@@ -17,6 +21,7 @@ A full-stack social media application featuring user profiles, authentication, a
 ├── backend/          # Node.js + Express API
 │   ├── prisma/       # Database schema & migrations
 │   ├── src/          # Application source code
+│   └── uploads/      # Local file storage (dev only)
 ├── frontend/         # React.js + Vite application
 │   ├── src/          # Components, pages, hooks
 │   └── public/       # Static assets
@@ -85,6 +90,7 @@ AWS_SECRET_ACCESS_KEY="your-aws-secret-key"
 AWS_REGION="us-east-1"
 AWS_S3_BUCKET="your-s3-bucket-name"
 PORT=3001
+FRONTEND_URL="your-frontend-url-in-production"
 ```
 
 ### Frontend (.env)
