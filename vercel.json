@@ -10,10 +10,7 @@
     },
     {
       "src": "backend/package.json",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["backend/prisma/**"]
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
