@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd backend && npx prisma generate && cd ../frontend && npm ci && npm run build",
-    "vercel-build": "cd backend && npx prisma generate && cd ../frontend && npm ci && npm run build",
+    "build": "concurrently \"cd backend && npx prisma generate && npm start\" \"cd frontend && npm ci && npm run build\"",
+    "vercel-build": "concurrently \"cd backend && npx prisma generate && npm start\" \"cd frontend && npm ci && npm run build\"",
     "postinstall": "cd backend && npx prisma generate"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "dotenv": "^16.3.1",
     "@prisma/client": "^5.6.0",
     "uuid": "^9.0.1",
-    "prisma": "^5.6.0"
+    "prisma": "^5.6.0",
+     "concurrently": "^8.0.0"
   }
 }
