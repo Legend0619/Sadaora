@@ -25,13 +25,5 @@
       "src": "/(.*)",
       "dest": "/frontend/dist/$1"
     }
-  ],
-  "functions": {
-    "backend/src/server.js": {
-      "maxDuration": 30
-    }
-  },
-  "env": {
-    "DATABASE_URL": "@database_url"
-  }
+  ]
 }
