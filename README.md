@@ -13,7 +13,7 @@ A full-stack social media application featuring user profiles, authentication, a
 - **Database**: PostgreSQL with Prisma ORM
 - **Authentication**: JWT-based session management
 - **File Upload**: AWS S3 (for profile images)
-- **Deployment**: Ready for Vercel/Netlify frontend + Railway/Heroku backend
+- **Deployment**: Ready for Vercel/frontend + backend
 
 ## 🏗️ Project Structure
 
@@ -21,7 +21,6 @@ A full-stack social media application featuring user profiles, authentication, a
 ├── backend/          # Node.js + Express API
 │   ├── prisma/       # Database schema & migrations
 │   ├── src/          # Application source code
-│   └── uploads/      # Local file storage (dev only)
 ├── frontend/         # React.js + Vite application
 │   ├── src/          # Components, pages, hooks
 │   └── public/       # Static assets
